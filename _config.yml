@@ -22,7 +22,7 @@ title: My blog!
 email: draculaspot@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog created to document my journey during a 100 days of code challenge.
-baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll_blog" # the subpath of your site, e.g. /blog
 url: "https://akirapearl/github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Akirapearl
 
