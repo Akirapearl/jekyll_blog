@@ -1,0 +1,10 @@
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+header {
+    background-image: linear-gradient(black, grey);
+}
