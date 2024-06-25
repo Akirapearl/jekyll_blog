@@ -42,7 +42,7 @@ Even though I do have a Linux system with Qemu/Kvm Virtual Machines already avai
 bridge network, so the VM could be connected to the same network as my current workstation. [1] [2]  Thus, since I already have experience with
 Virtualbox, and it would make things easier in case of failure to clone or rebuild my setup, I opted for the quickest and most familiar option this time.
 
-![setup diagram]("/jekyll_blog/assets/images/image_diagram.png")
+![setup diagram](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/image_diagram.png)
 
 
 ### So, about DAY 1's progress
@@ -56,6 +56,9 @@ Also I want to highlight that this post includes a Unsplash image that i slightl
 ---
 #### Credits:
 [Challenge image](https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-near-blue-and-white-sky-SrewPUfo2c0)
+
 [Diagram website](draw.io)
+
 [1](https://wiki.qemu.org/Documentation/Networking)
+
 [2](https://apiraino.github.io/qemu-bridge-networking/)
