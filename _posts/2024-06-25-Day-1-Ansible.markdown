@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 
-![custom header](/assets/images/SrewPUfo2c0.png)
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
 
 
 Welcome to my very first day at the 100 days of code trip!
