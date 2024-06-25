@@ -42,7 +42,7 @@ Even though I do have a Linux system with Qemu/Kvm Virtual Machines already avai
 bridge network, so the VM could be connected to the same network as my current workstation. [1] [2]  Thus, since I already have experience with
 Virtualbox, and it would make things easier in case of failure to clone or rebuild my setup, I opted for the quickest and most familiar option this time.
 
-![setup diagram](/assets/images/image_diagram.png)
+![setup diagram]("/jekyll_blog/assets/images/image_diagram.png")
 
 
 ### So, about DAY 1's progress
