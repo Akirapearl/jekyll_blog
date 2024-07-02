@@ -16,8 +16,8 @@ Now, I really wanted to know what to expect on each aspect of this challenge, an
 with Ansible, I took the chance over Odin Project [JS path](https://www.theodinproject.com/paths/full-stack-javascript) to see what
 contents does it really cover and how (practical or theoretical approach).
 
-As matter of fact, Odin's really, and I want to emphasize, REALLY into theory-oriented learning, even though it provides external links,
-it does not really does so for its own platform, which I am not really into, as I prefer a mixed way; where a part of theory is shown/tested 
+As matter of fact, Odin's REALLY into theory-oriented learning, even though it provides external links for practical exercises,
+it does not really provide those for its own platform, which I am not really into, as I prefer a mixed way; where a part of theory is shown/tested 
 and then I can just apply over a challenge/exercise, kind of like freecodecamp's.
 
 As a sidenote, I hope that this situation only matters for HTML and CSS learning, as those have been a returned topic to learn
