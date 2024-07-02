@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "Day 2 - Getting to know Odin project"
+date:   2024-06-25 17:50:00 +0200
+categories: jekyll update
+---
+
+
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
+
+Hi!
+
+This is my second entry on this 100 days journey.
+
+Now, I really wanted to know what to expect on each aspect of this challenge, and since I already have had some familiarity
+with Ansible, I took the chance over Odin Project [JS path](https://www.theodinproject.com/paths/full-stack-javascript) to see what
+contents does it really cover and how (practical or theoretical approach).
+
+As matter of fact, Odin's really, and I want to emphasize, REALLY into theory-oriented learning, even though it provides external links,
+it does not really does so for its own platform, which I am not really into, as I prefer a mixed way; where a part of theory is shown/tested 
+and then I can just apply over a challenge/exercise, kind of like freecodecamp's.
+
+As a sidenote, I hope that this situation only matters for HTML and CSS learning, as those have been a returned topic to learn
+about about 3 times at the time of writing, this one being the 4th, which makes this part really tedious.
+
+Even so, I've collected some resources to maximize my learning and to help me out reach Odin's own challenges with a better mindset,
+those can be checked at my newly created [repo](https://github.com/Akirapearl/odin_project).
+
+
+### What I learned
+
+- I don't remember that much of the basics, yet I can catch up no problem, I do completely understand quite fine any code I've read so far.
+- I don't really remember flexbox or grid either, these two are quite a mistery again.
+- There are some resources I can follow within Odin's site, not everything is purely theoretical!.
+- I did not know about resets and reboots for CSS styling, quite fun to see those in action!.
+
+
+### Next steps
+
+Now that I understand the structure for Odin's project site, I can better plan my approach to it etc.
+For this, I will be using my above mentioned repo to upload everything I create, ideally it will be useful to record my learning process, my ups and downs etc. 
+
+Even with all this, I believe that I WON'T be mixing topics, meaning that I will first focus on either Ansible OR Web-dev/Odin's and will only change on a 
+daily basis when I feel either too frustrated, exhausted or feeling any sort of refreshment.
+
+Once I'm done with the two challenges I have over my shoulders for this very 100 days topic, I will post a showcase of what I've done so far,
+as well as reflecting everything over their respective repos.
+
+That's all for today,
+
+See you next time!
+

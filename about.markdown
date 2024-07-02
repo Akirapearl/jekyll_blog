@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About this project & Jekyll
+title: About 
 permalink: /about/
 ---
 
