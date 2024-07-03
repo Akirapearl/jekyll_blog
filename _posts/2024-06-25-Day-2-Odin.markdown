@@ -17,13 +17,15 @@ with Ansible, I took the chance over Odin Project [JS path](https://www.theodinp
 contents does it really cover and how (practical or theoretical approach).
 
 As matter of fact, Odin's REALLY into theory-oriented learning, even though it provides external links for practical exercises,
-it does not really provide those for its own platform, which I am not really into, as I prefer a mixed way; where a part of theory is shown/tested 
-and then I can just apply over a challenge/exercise, kind of like freecodecamp's.
+it does not really provide those for its own platform. Honestly I do prefer a mixed way; where a part of theory is shown/tested 
+and then proposed to be applied over a challenge/exercise, kind of like freecodecamp does, even so, notes are really clear and easy
+to understand.
 
-As a sidenote, I hope that this situation only matters for HTML and CSS learning, as those have been a returned topic to learn
-about about 3 times at the time of writing, this one being the 4th, which makes this part really tedious.
+As a sidenote,at least only matters for HTML and CSS learning, I do feel quite numb/exasperated, as those have been a returned topic to learn
+for me, about 3 times at the time of writing, this one being the 4th, which makes this part really tedious to go over, even if I get to know more
+about this topic.
 
-Even so, I've collected some resources to maximize my learning and to help me out reach Odin's own challenges with a better mindset,
+Lastly, I've collected some resources to maximize my learning and to help me out reach Odin's own challenges with a better mindset,
 those can be checked at my newly created [repo](https://github.com/Akirapearl/odin_project).
 
 
