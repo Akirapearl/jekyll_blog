@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 0 using Jekyll"
-date:   2024-06-17 13:48:00 +0200
+date:   2024-07-06 16:28:00 +0200
 categories: jekyll update
 ---
 
@@ -9,7 +9,7 @@ Hi!
 
 This is my very first post created for this Github site.
 
-I have been trying out blog/static sites frameworks for the last couple of days, some of them quite 
+I have been trying out blog/static sites frameworks recently, some of them quite 
 know around the dev communities, like [hugo](https://gohugo.io/), yet i've decided to stick with Jekyll,
 since i feel it is easier to use and customize (with or without themes).
 
@@ -18,7 +18,7 @@ bother too much afterwards for it to look prettier and will just focus on my pro
 
 ### 100 days of code
 
-As disclaimed in the subtitle, my idea with this blog/static site is to document my journey with a project I
+My idea with this blog/static site is to document my journey with a project I
 shall finish within 100 days, with a couple of considerations. [100daysofcode](https://www.100daysofcode.com/)
 
   1 - I will only document my progress using this blog, so the entire experience will remain public.
@@ -27,13 +27,27 @@ shall finish within 100 days, with a couple of considerations. [100daysofcode](h
   to finish this before November 19th, as a way to celebrate my 26th birthday and close a year full of new
   experiences and self-improvement.
 
-At the time of writing my main ideas for this challenge are as follows:
+### So...How does my starting point looks like?
 
-  > Finish my [homelab](https://github.com/Akirapearl/homelab) configuration. Adding the services I see of use during the process, and automate it
-  via [Ansible](https://www.ansible.com/).
+At the time of writing my main idea for this challenge is to learn Golang, so I can add further possibilities
+to my own knowledge toolbox.
 
-  > Expand my knowledge base by finishing Odin Project's intermediate JS path and applying it to my current Github site.
+Current toolbox as a sysadmin:
+```
+- Linux/Windows Sysadmin
+- Google Cloud
+- Ansible
+- Docker/Kubernetes Admin
+```
 
-That being said, this is all for today's entry.
+Other tech/IT related knowledge:
+```
+- HTML/CSS/JS/PHP
+- Git
+- Bash
+- MySQL/MongoDB
+```
+
+That's all for today,
 
 See you next time!

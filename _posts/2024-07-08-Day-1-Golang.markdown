@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Day 1 - Golang, setting up and planification"
+date:   2024-07-07 17:00:00 +0200
+categories: jekyll update
+---
+
+
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
+
+
+Welcome to my very first day at the 100 days of code trip!
+
+First things first, I would like to mention that no art showed over any entry/post of this blog will be disclaimed as 
+belonged to me unless specifically said so, all original images will be added at the end of each post 
+so the original authors can be properly reflected.
+
+### So, about DAY 1's intentionality
+
+Truth being told, it can bee seen at this very same repo that there were a bunch of commits, oriented to a previous idea I took 
+for this very same challenge, even so, I decided to move on from a wider and way more complex objective, in favor of a more focused
+and feasible objective, which will be to become more experienced with Golang.
+
+The original idea's progress can be briefly seen below.
+
+![original idea](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/previous.png)
+
+Moving on, how does my current setup look like? Well, my current Operative System is PopOS, running on a custom PC, I already have Golang
+installed on its almost latest version (currently 1.22.2, at the time of writing latest is 1.22.5).
+
+![setup](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/setup.png)
+
+### What now?
+
+How will I be learning then? 
+
+As I am just starting, I remember going through Techworld with Nana's youtube channel and finding this
+really nice [introductory course](https://youtu.be/yyUHQIec83I?si=xrfis_DrpVzmbJYy). After that, I will look for more focused learning, 
+well methodologies can be followed up like testing or [webapps-focused](https://lets-go.alexedwards.net/), at the same time I am already
+aware of specific creators as [Roberto Morais](https://www.youtube.com/@FuenRob).
+
+That would be it for this one,
+
+See you next time!
+
+---
+#### Credits:
+[Challenge original image](https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-near-blue-and-white-sky-SrewPUfo2c0)
