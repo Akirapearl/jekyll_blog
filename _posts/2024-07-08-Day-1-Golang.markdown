@@ -15,7 +15,7 @@ First things first, I would like to mention that no art showed over any entry/po
 belonged to me unless specifically said so, all original images will be added at the end of each post 
 so the original authors can be properly reflected.
 
-### So, about DAY 1's intentionality
+### So, about DAY 1's intentionality, setup and original concept
 
 Truth being told, it can bee seen at this very same repo that there were a bunch of commits, oriented to a previous idea I took 
 for this very same challenge, even so, I decided to move on from a wider and way more complex objective, in favor of a more focused
@@ -30,7 +30,11 @@ installed on its almost latest version (currently 1.22.2, at the time of writing
 
 ![setup](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/setup.png)
 
-### What now?
+My idea with this project, as vaguely described at Day 0's post, is add further possibilities to my own knowledge toolbox, as Golang
+is a multi-purpose programming language, I will set the goal into learning as much as I can and endup being able to comprehend any go-based
+code and, hopefully, build a specific tool of my own, starting from scratch.
+
+### What now? Where do I start learning?
 
 How will I be learning then? 
 
