@@ -42,6 +42,8 @@ In short, I followed [MoureDev's introduction to Go](https://www.youtube.com/wat
 - Functions
 - Structs
 ```
+Progress can be followed at my [Golang Learning Repo](https://github.com/Akirapearl/LearningGo)
+
 
 ### Next steps
 
