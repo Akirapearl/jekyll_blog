@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Day 2 - Starting up, more resources and Hello World."
