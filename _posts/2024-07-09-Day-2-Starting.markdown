@@ -11,9 +11,11 @@ Hello there!
 
 Starting to study a new programming language, even if you already knew it a bit from previous experiences, is always an adventure. Failing around variable declaration can feel like you don't really know that much, or may be this sort of learning experience is not for oneself, but now it's time to start strong and...well, better show than tell.
 
-### Gather good resources
+### Gathering good resources
 
 It's not the same to learn from a practical/video tutorial than a fully theoretical/text one, as for myself, at least just for the basics, I tend to prefer video & practical approach.
+
+---
 
 **That sounds good and all, but what resources did you actually find? Which one/s are you using for this early stages?.**
 
@@ -27,9 +29,11 @@ And some already known sources as [W3Schools](https://www.w3schools.com/go/go_ge
 
 Moreover, I've got my eye over bigger scoped courses that might be helpful, provided by companies as [Microsoft](https://learn.microsoft.com/es-es/training/paths/go-first-steps/) or [Google](https://www.cloudskillsboost.google/focuses/2754?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=5407947), the second of whom actually expand the topic into how to deploy the code into [App Engine](https://cloud.google.com/appengine/?hl=en)
 
+---
+
 ### How did day 2 progress went then?
 
-In short, I followed [MoureDev's introduction to Go](https://www.youtube.com/watch?v=AGiayASyp2Q) since I wanted to revisit both code basics and more conceptual notions about Golang.
+In short, I followed [MoureDev's introduction to Go](https://www.youtube.com/watch?v=AGiayASyp2Q) since I wanted to revisit both code syntax basics and more conceptual notions about Golang. Progress can be followed at my [Golang Learning Repo](https://github.com/Akirapearl/LearningGo)
 
 ```
 - Hello World
@@ -42,8 +46,6 @@ In short, I followed [MoureDev's introduction to Go](https://www.youtube.com/wat
 - Functions
 - Structs
 ```
-Progress can be followed at my [Golang Learning Repo](https://github.com/Akirapearl/LearningGo)
-
 
 ### Next steps
 

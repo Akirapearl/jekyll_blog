@@ -1,0 +1,139 @@
+---
+layout: post
+title:  "Day 3 - Go Tour - Revisiting basics, moving forward"
+date:   2024-07-13 12:10:00 +0200
+categories: jekyll update
+---
+
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
+
+Oh, Hi!
+
+**Disclaimer:** This post was distributed within multiple days, due to time restrictions and events out of my control, thus, the days
+where I could actually focus on my project were 12 and 13 of July 2024.
+
+### Starting point. - 12/07/2024
+
+I got late-ish (around 11PM) back home, and I had a Coca Cola just taken an hour before for dinner, so I could take some time coding. I took Go's official tour for a check and it ended up being kind of an easy start, yet I felt the need to stop because of midnight coming over and needing to go to
+sleep.
+
+#### How many indexes for the Tour did you finished?
+
+At least to get some steps done, I covered the first entire block for Go's Tour, which goes over basic functioning of the programming
+language and variable declaration.
+
+**I learned something!** It would seem that you can actually return more than a single value from a function, not only that, but you can return those
+as named variables! It would seem as a general basic knowledge, but it's been a while since I programmed anything on PHP, JS or even Go. Also the 
+introductory video I watched did not cover that much about returning values from functions.
+
+Hopefully tomorrow I will be able to finish at least two blocks for this tutorial steps I'm ramping up with!.
+
+### Testing the waters - 13/07/2024
+
+When it comes to programming, it is common to fall into the tutorial's trap, you can easily go through all of them yet do nothing on your own, because of lack of ideas or sort of a "writer's issue", you see the screen empty yet don't really know what to do, for that, I recurred to chatgpt, and introduced the following prompt.
+
+`Give me 5 exercises I can do in Golang for my very first 10 days into a 100 days of code challenge, I am just starting to learn it, so keep the level increasingly more difficult as moving on with the learning process. Don't give me any example or guidance other than the exercise's statement. Don't rely uniquely on mathematical knowledge.`
+
+**This was it's output:**
+
+```
+Day 1-2: FizzBuzz
+
+Exercise: FizzBuzz
+
+    Task: Write a program that prints the numbers from 1 to 100.
+    But for multiples of three, print "Fizz" instead of the number
+    and for the multiples of five, print "Buzz". 
+    For numbers which are multiples of both three and five, print "FizzBuzz".
+
+Day 3-4: Fibonacci Sequence
+
+Exercise: Fibonacci Sequence Generator
+
+    Task: Write a function that generates the first n numbers
+    in the Fibonacci sequence. The Fibonacci sequence starts with 0 and 1,
+    and each subsequent number is the sum of the previous two.
+
+Days 5-6: Contact List
+
+Exercise: Simple Contact List
+
+    Task: Create a program that allows the user to add, remove,
+    and view contacts. Each contact should have a name and a phone number.
+    Use a map to store the contacts, where the key is the contact's name
+    and the value is the phone number.
+
+Days 7-8: JSON Parsing
+
+Exercise: Parse JSON
+
+    Task: Write a program that reads a JSON string representing a list
+    of people (with fields for name and age) and parses it into a slice
+    of structs. Then, print out the names and ages of all people in the list.
+
+Days 9-10: File Operations
+
+Exercise: Read and Write to a File
+
+    Task: Write a program that reads text from a file, 
+    counts the number of lines, and writes the result to another file.
+    Ensure the program handles errors appropriately, such as when the 
+    input file does not exist.
+```
+
+Feels like something I can manage to do within the following days, so I'll put a bookmark there.
+
+#### How many indexes for the Tour did you finished today?
+
+As for today, I stopped myself at the point where I finished two of the main indexes (related to for loops, flux control and a bit about functions), leaving the next one, which starts with [pointers](https://go.dev/tour/moretypes/1) for my next learning session (which shall be tomorrow). I've also want to point out (pun not intended) that I also kept [Go by example](https://gobyexample.com/) website nearby, so I would have access to more examples and explanations during the session, which was specially useful while getting to know about defer statements.
+
+#### Did you write any code of your own by now?
+
+Yes! Yet it might be a smaller thing, but I dedicated a handful of minutes to write a basic calculator (yet planning for it to be improved over time) over my [Learning Go repo](https://github.com/Akirapearl/LearningGo/blob/main/2024/exercises/calculator.go) as well as checking some test exercise at [codewars](https://www.codewars.com).
+
+---
+
+**Proposed exercise**
+
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
+
+For example (Input -> Output):
+
+2 -> 3 (1 + 2)
+8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+
+---
+
+**My solution (not exact, explained below)**
+```
+package kata
+
+func Summation(n int) int {
+
+	for i := 1; i <= n; i++ {
+		n += i
+	}
+	return
+}
+```
+**Proper solution**
+```
+package kata
+
+func Summation(n int) (sum int) {
+	for i := 0; i <= n; i++ {
+		sum += i
+	}
+	return
+}
+```
+
+My take ended up not being properly done, and after some attempts locally it just prompted some infinite summatory loops I had to manually stop, thus ended up with me checking codewar's forums for a proper solution, and confirmed that indeed more users had similar issues, complaining about the exercise's explanation, so it was not that bad of a try for me, right?
+
+As for now, I will check codewars daily, yet I will not commit to each exercise, since it has a higher mathematical expectation that I cannot guarantee to satisfy. I did understand the outcome, yet the "programmer mindset" that some people got around by statements like "why you don't really know Eulers thing for this operation", I've got some mathematical knowledge of my own, yet I do not have a proper background as complex mathematics or something deeper instructed at universities, thus I cannot dive that deep into logical mindset behind programming.
+
+I do not want to take this as a complain, yet a learning experience, I will not surrender with codewars for now, yet I will go step-by-step, may be a mathematics course in the future can help out, yet it is not within my expected priorities.
+
+That's it for this post, then.
+
+Let's Go! See you next time!

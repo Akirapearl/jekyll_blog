@@ -30,9 +30,9 @@ installed on its almost latest version (currently 1.22.2, at the time of writing
 
 ![setup](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/setup.png)
 
-My idea with this project, as vaguely described at Day 0's post, is add further possibilities to my own knowledge toolbox, as Golang
-is a multi-purpose programming language, I will set the goal into learning as much as I can and endup being able to comprehend any go-based
-code and, hopefully, build a specific tool of my own, starting from scratch.
+My idea with this project, as vaguely described at Day 0's post, is adding further possibilities to my knowledge toolbox. As Golang
+is a multi-purpose programming language, I will set the goal into learning as much as I can build a tool or proper snippet of code of my own,
+starting from scratch.
 
 ### What now? Where do I start learning?
 
