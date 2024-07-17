@@ -45,16 +45,18 @@ Future ideas/concepts I might take into consideration are:
     - Linux automation tool - Deploy dotfiles, report system settings in a fastfetch-like kind of way.
 ```
 ---
+
 Choice picker: Prompt a situatioon as "Your party appears at a city, crowded with people, there's a market etc" and the bot shall show 4 buttons,
 for the players to vote which action each wants to do.
 
 ---
 
+
 ### So what have I done today?
 
-It would seem that some parts of Go's Tour area bit difficult for me to understand entirely, as it happened with pointers. Thus, I started a wider scoped [tutorial] (https://www.youtube.com/watch?v=8uiZC0l4Ajw), which covers most of Go's syntax into an intermediate level and quite fast, yet it serves as complete-ish refresher. Ideally after finishing it I shall be able to understand most Golang's possibilities and start a project of my own.
+It would seem that some parts of Go's Tour area bit difficult for me to understand entirely, as it happened with pointers. Thus, I started a wider scoped [tutorial](https://www.youtube.com/watch?v=8uiZC0l4Ajw), which covers most of Go's syntax into an intermediate level and quite fast, yet it serves as complete-ish refresher. Ideally after finishing it I shall be able to understand most Golang's possibilities and start a project of my own.
 
-In on itself that was quite intense. With the tutorial half gone-by, I did some codewars exercises over my [Learning Go](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises) 
+In on itself that was quite intense. With the tutorial half gone-by, I did some codewars exercises over my [Learning Go repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises) 
 
 
 ### Fair enough, next steps then?
