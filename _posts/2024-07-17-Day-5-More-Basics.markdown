@@ -7,7 +7,7 @@ categories: jekyll update
 
 ![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
 
-Hi!
+### Hi!
 
 Summer 2024 is being quite dificult to handle here in Spain, also living in a coast city with loads of humidity and kind of surrounded by social media
 is hard for the attention span and not the best while working with computers. As for now I've been trying to continue with this challenge 
