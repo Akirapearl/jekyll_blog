@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 6 to 10 - Getting deep the learning...mines?"
-date:   2024-07-22 22:00:00 +0200
+date:   2024-07-22 23:00:00 +0200
 categories: jekyll update
 ---
 
@@ -153,3 +153,54 @@ Task: Write a program that determines whether a given year is a leap year.
 After that, I started checking around [Go Web Examples](https://gowebexamples.com/hello-world/) site to learn more about other aspects of Go, 
 as well as created a new directory within my Golang [repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/web_learning).
 
+Then, I moved over the contacts exercise, even if it has a lot of work over it, in order to create an actually usable project, I made some improvements. Current code:
+
+```
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func randNumber() int {
+	// Create a "default" value -- Generate a random number between 0 and 1000
+	num := rand.Intn(1000)
+	return num
+}
+
+func main() {
+	fmt.Println("Contacts exercise")
+
+	// initialize map
+	contacts := make(map[string]int)
+
+	contacts["Alex"] = randNumber()
+
+	//fmt.Println(contacts["Alex"])
+
+	// Reads input & generates variable for the input requested
+	fmt.Println("Input name:")
+
+	var w1 string
+	fmt.Scanln(&w1)
+	// Assign number to new element of the map
+	// New call to the function - Generates different number
+	contacts[w1] = randNumber()
+
+	// Print entire map
+	fmt.Println("map:", contacts)
+
+	// Prints assigned number only
+	fmt.Println("New contact has number: ", contacts[w1])
+
+	// Remove element from the map, then list content to verify
+	delete(contacts, w1)
+	fmt.Println("map:", contacts)
+
+}
+
+```
+
+
+#### 2-07-2024 - Day 9
