@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 6 to 10 - Getting deep the learning...mines?"
-date:   2024-07-18 22:00:00 +0200
+date:   2024-07-22 22:00:00 +0200
 categories: jekyll update
 ---
 
@@ -11,8 +11,7 @@ categories: jekyll update
 Hello there[!](https://www.youtube.com/watch?v=rEq1Z0bjdwc)
 
 Hope that anyone reading this in the future is doing fine! As for myself, I have carried up some days upon learning more about
-Golang, prior to focusing more into starting-from-scratch projects, as yet I have details to know and get deeper knowledge on how
-to code proper Go.
+Golang, prior to focusing more into starting-from-scratch projects, as yet I have quite some details to understand.
 
 Following up that line, I've checked some resources that might be ideal to keep close:
 
@@ -33,11 +32,13 @@ to expand its usability.
 
 **Well**, let's get down to disclose it all then...
 
-#### 18/07/2024
+
+#### 18/07/2024 - Day 6
 
 Mostly continued with the video mentioned earlier within this blog, up to the interfaces content, following along Go's Tour too.([Link](https://www.youtube.com/watch?v=8uiZC0l4Ajw)).
 
-Then, I also went through some codewars proposed exercises, which can be seen at my [learning repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises).
+Then, I also went through a bit of codewars proposed exercises, which can be seen at my [learning repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises).
+
 ```
 Exercise proposal:
 Make a simple function called greet that returns the most-famous "hello world!".
@@ -64,17 +65,16 @@ func greet() string{
 
 On my own approach, the idea was to pass a boolean value to the greet function, thus choosing if said piece of code would go over one part of the flux control or the other. 
 
-Lastly, I went curious about how should I structure my projects moving on.Having proper documented code will save time, effort, and the will to start over since I would not understand my own code (joke. but it happens to a lot of devs, been there already).
 
-#### 21/07/2024
+#### 21/07/2024 - Day 7
 
 Started to follow up the below shown exercise. The code can be seen [here](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/JSON_parser).:
 
 ```
    Exercise: Simple Contact List
 
-       Task: Create a program that allows the user to add and manage contacts.
-	   Each contact should have a name and a phone number.
+       Task: Create a program that allows the user to view and manage (add/delete) contacts.
+	     Each contact should have a name and a phone number.
        Use a map to store the contacts, where the key is the contact's name
        and the value is the phone number.
 ```
@@ -115,22 +115,41 @@ func main() {
 }
 ```
 
-Next step: Allow user input to introduce new contacts, data should be also stored/read somehow, may be creating/reading a JSON file. Upon a conceptual level, the structure would be as follows:
+Improvement line: Allow user input to introduce new contacts, data should be also stored/read somehow, may be creating/reading a JSON file...
 
-**1-** Lists existent contacts, if JSON file does not exist, create it empty
-
-**2-** Add new contact
-
-- No repeated names shall be allowed, for the sake of the simplicity of this exercise.
+**Current issue**: Random number is only generated once, thus all entries using the "num" variable will use the same random number. Still pending to apply the "delete/remove created contacts" step. 
 
 
-**3-** Remove single contact, chosen by name
+#### 22-07-2024 - Day 8
 
-**4-** Exit the running code.
+Today I chose to follow up into a review for the basics of Golang up to the point where I'm currently learning (structs/interfaces). [Repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/batch_1)
 
-After either option but last one is completed, this very same script shall clean the screen and start over again.
+I finished the following exercises.
+```
+###Exercise 1: Constants, Variables, and Basic Data Types
 
-**Current issue/improve point**: Random number is only generated once, thus all entries using the "num" variable will use the same random number. 
+Task: Create a program that calculates the area and circumference of a circle.
 
+    Define a constant for Pi (π = 3.14159).
+    Declare a variable for the radius of the circle (e.g., radius).
+    Calculate the area using the formula: Area = π * radius^2.
+    Calculate the circumference using the formula: Circumference = 2 * π * radius.
+    Print the results.
 
+	--------------------------------------------------------
+
+###Exercise 2: Functions and Control Structures
+
+Task: Write a program that determines whether a given year is a leap year.
+
+    Create a function that takes an integer year as an argument and returns a boolean. -- Check
+    In the function, use control structures to determine if the year is a leap year:
+    A year is a leap year if it is divisible by 4. -- Check
+    However, if the year is divisible by 100, it is not a leap year unless it is also divisible by 400.-- Check
+    In the main function, prompt the user to enter a year, call isLeapYear, and print whether the year is a leap year.
+	*/
+```
+
+After that, I started checking around [Go Web Examples](https://gowebexamples.com/hello-world/) site to learn more about other aspects of Go, 
+as well as created a new directory within my Golang [repo](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/web_learning).
 
