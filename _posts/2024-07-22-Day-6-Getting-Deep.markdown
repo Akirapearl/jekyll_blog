@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 6 to 10 - Getting deep the learning...mines?"
-date:   2024-07-22 23:00:00 +0200
+date:   2024-07-24 22:30:00 +0200
 categories: jekyll update
 ---
 
@@ -142,10 +142,10 @@ Task: Create a program that calculates the area and circumference of a circle.
 
 Task: Write a program that determines whether a given year is a leap year.
 
-    Create a function that takes an integer year as an argument and returns a boolean. -- Check
+    Create a function that takes an integer year as an argument and returns a boolean.
     In the function, use control structures to determine if the year is a leap year:
-    A year is a leap year if it is divisible by 4. -- Check
-    However, if the year is divisible by 100, it is not a leap year unless it is also divisible by 400.-- Check
+    A year is a leap year if it is divisible by 4.
+    However, if the year is divisible by 100, it is not a leap year unless it is also divisible by 400.
     In the main function, prompt the user to enter a year, call isLeapYear, and print whether the year is a leap year.
 	*/
 ```
@@ -203,4 +203,49 @@ func main() {
 ```
 
 
-#### 2-07-2024 - Day 9
+#### 24-07-2024 - Day 9
+
+Today I chose to continue reviewing Golang's basics.:
+
+```
+###Exercise 3: Arrays, Slices, Maps, and Loops
+
+Task: Create a program that calculates the average of a list of numbers.
+
+    Define an array or slice of integers with at least five elements.
+    Use a loop to iterate through the elements and calculate the sum.
+    Calculate the average by dividing the sum by the number of elements.
+    Print the average.
+
+###Exercise 4: Strings, Runes, and Bytes
+
+Task: Write a program that counts the number of vowels in a given string.
+
+    Prompt the user to enter a string.
+    Convert the string to lowercase to handle case insensitivity.
+    Iterate through the string, character by character (rune by rune).
+    Count the vowels (a, e, i, o, u).
+    Print the total number of vowels found.
+```
+
+I got a bit stucked with Exercise 4, so I left it aside for the day after quite some attempts, since frustration was catching up with me because an overall exhausting day, and programming in a bad mood is no good for me, my mental health, or my overall learning process.
+
+After that, I continued a bit along the "Learn GO Fast: Full Tutorial", this time getting re-introduced to pointers. [Link here](https://www.youtube.com/watch?v=8uiZC0l4Ajw).
+
+
+#### /07/2024 - Day 10!
+
+
+### Conclusions
+
+I need to focus more into learning the basics, at first I hoped this initial steps to last less time, which was honestly unrealistic. Since I've spent about a month up to this point, getting along each day's ups and downs, my own self-demand to become better faster...I just need to calm down, keep on learning the basics on a steady yet constant basis and time will tell when I feel ready to start something bigger.
+
+As for now, my new goals for the next 10 days are:
+- Try out Advent of code's exercises
+- Continue with Golang's basics, hopefully finishing the 1h long tutorial that covers most of them and beyond
+- Start out with [Go web examples](https://gowebexamples.com/) 
+
+
+I shall keep it [going](https://www.youtube.com/watch?v=uE-1RPDqJAY), but this is all for now.
+
+See you later!
