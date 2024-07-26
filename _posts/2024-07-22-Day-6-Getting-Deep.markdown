@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 6 to 10 - Getting deep the learning...mines?"
-date:   2024-07-24 22:30:00 +0200
+date:   2024-07-26 21:10:00 +0200
 categories: jekyll update
 ---
 
@@ -10,8 +10,8 @@ categories: jekyll update
 
 Hello there[!](https://www.youtube.com/watch?v=rEq1Z0bjdwc)
 
-Hope that anyone reading this in the future is doing fine! As for myself, I have carried up some days upon learning more about
-Golang, prior to focusing more into starting-from-scratch projects, as yet I have quite some details to understand.
+Hope that everyone is doing fine! As for myself, I have carried up some days upon learning more about
+Golang, prior to focusing more into starting-from-scratch projects, as yet I have lots of things to understand.
 
 Following up that line, I've checked some resources that might be ideal to keep close:
 
@@ -26,9 +26,18 @@ to expand its usability.
     - Calling a weather API
         - let the user add multiple locations
         - Implement concurrency
+
+	- Tic-tac-toe game (suggested online)
+		- Needs the script to save its status (per game), change turns etc
+		- may be leaderboard? 
+		- input player games?
+		-- Go is not commonly used for games, yet this could be a complete project on its own
 ```
 
-### What did you do with this challenge all this time?
+I might not do any of the above as well as any other idea I might have written about over the challenge, yet I think it is beneficial for me to not stop being passionate about learning and opt into feasible projects I can even keep as mine and maintain over time.
+
+
+### What did you do all this time?
 
 **Well**, let's get down to disclose it all then...
 
@@ -202,6 +211,7 @@ func main() {
 
 ```
 
+Nothing too far from there I needed to stop due to heat giving me headaches for some time, better to stop before having a more alarming situation.
 
 #### 24-07-2024 - Day 9
 
@@ -233,8 +243,22 @@ I got a bit stucked with Exercise 4, so I left it aside for the day after quite 
 After that, I continued a bit along the "Learn GO Fast: Full Tutorial", this time getting re-introduced to pointers. [Link here](https://www.youtube.com/watch?v=8uiZC0l4Ajw).
 
 
-#### /07/2024 - Day 10!
+#### 26/07/2024 - Day 10
 
+Today I got to finish all my exercises! I finished exercise 4 and exercise 5 quite more easily that expected (being quite honest, for exercise 4 I had to ask over a Golang community I joined over Discord), the issue was within my code, as easy as replacing double quotes for a single quotation at the line where I declared a conditional within the loop that recurred all values within the rune created before [(see Line 38)](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/batch_1/exercise4).
+```
+###Exercise 5: Structs
+
+Task: Create a program that stores and displays information about a book.
+
+	Define a struct Book with the following fields: Title, Author, YearPublished, and ISBN.
+	Create an instance of the Book struct and initialize it with values.
+	Write a function printBookDetails that takes a Book struct as an argument and prints the book's details in a readable format.
+	In the main function, call printBookDetails with the book instance.
+```
+Result can be seen [here](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/batch_1/exercise5).
+
+After that, I took a look over again at the Web server example I mentioned at [Day 8]((https://gowebexamples.com/hello-world/)).
 
 ### Conclusions
 
@@ -243,7 +267,7 @@ I need to focus more into learning the basics, at first I hoped this initial ste
 As for now, my new goals for the next 10 days are:
 - Try out Advent of code's exercises
 - Continue with Golang's basics, hopefully finishing the 1h long tutorial that covers most of them and beyond
-- Start out with [Go web examples](https://gowebexamples.com/) 
+- Start out with [Go web examples](https://gowebexamples.com/) more seriously, may be purchasing the [Let's Go book](https://lets-go.alexedwards.net/).
 
 
 I shall keep it [going](https://www.youtube.com/watch?v=uE-1RPDqJAY), but this is all for now.
