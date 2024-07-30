@@ -105,7 +105,7 @@ For example (Input -> Output):
 ---
 
 **My solution (not exact, explained below)**
-```
+```go
 package kata
 
 func Summation(n int) int {
@@ -117,7 +117,7 @@ func Summation(n int) int {
 }
 ```
 **Proper solution**
-```
+```go
 package kata
 
 func Summation(n int) (sum int) {

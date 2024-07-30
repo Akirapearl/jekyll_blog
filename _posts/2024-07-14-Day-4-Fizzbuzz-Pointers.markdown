@@ -28,7 +28,7 @@ Exercise: FizzBuzz
 ```
 
 And this was my [finished code](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises)
-```
+```go
 package main
 
 import "fmt"

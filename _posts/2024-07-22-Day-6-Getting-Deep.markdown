@@ -58,7 +58,7 @@ Sure, this is about as easy as it gets. But how clever can you be to create the 
 
 This one was pretty much limited to the test's claimed points, limiting my first approach, which included executing an external function to be used from main.
 
-```
+```go
 package kata // do not remove
 
 func greet() string{
@@ -90,7 +90,7 @@ Started to follow up the below shown exercise. The code can be seen [here](https
 
 At the time of writing the code looks as follows.
 
-```
+```go
 package main
 
 import (
@@ -164,7 +164,7 @@ as well as created a new directory within my Golang [repo](https://github.com/Ak
 
 Then, I moved over the contacts exercise, even if it has a lot of work over it, in order to create an actually usable project, I made some improvements. Current code:
 
-```
+```go
 package main
 
 import (
