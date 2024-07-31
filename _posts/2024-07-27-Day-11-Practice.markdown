@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 11 to 20 - Practice, Practice, Learn, Practice"
-date:   2024-07-29 18:10:00 +0200
+date:   2024-07-31 15:10:00 +0200
 categories: jekyll update
 ---
 
@@ -116,7 +116,7 @@ As a matter of fact, found more exercises platforms that use Golang. [Link](http
 
 #### 29/07/2024 - Day 13
 
-Today I did a bit of everything, I went over the third exercise of my second batch (statement below), updated the main README.md for the LearningGo repo, and revisited the Goroutines concept around for a bit.
+Today I did a bit of everything, I went over the third exercise of my second batch (statement below), updated the main README.md for the LearningGo repo...
 
 ```
 Exercise 3: Basic File I/O
@@ -136,7 +136,115 @@ Sidenote that I found some references about working with JSON. [Link](https://ww
 
 Also found some interesting tool built in Go! Yet to confirm whether it is written following best practices etc, but surely enough it can be a starting point to look for projects to contribute or to review, in order to improve my own code. [Gowall tool](https://github.com/Achno/gowall)
 
-#### 30/07/2024 - Day 14
+#### 31/07/2024 - Day 14
+
+I finished both exercises 4 and 5! Can't say much more about them, yet I am excited to be able to finish this in a more agyle way, I guess?
+
+```
+Exercise 4: Sorting Algorithms
+
+Task: Implement a simple sorting algorithm (e.g., Bubble Sort) to sort a list of integers.
+
+    Create a function bubbleSort that takes a slice of integers and sorts it in ascending order.
+    In the main function, define a slice of integers and print it.
+    Call bubbleSort to sort the slice.
+    Print the sorted slice.
+
+Exercise 5: Unique Elements in a Slice
+
+Task: Write a program that finds the unique elements in a slice of integers.
+
+    Create a function uniqueElements that takes a slice of integers and returns a new slice with only the unique elements.
+    In the main function, define a slice of integers with some duplicate values.
+    Call the uniqueElements function and print the resulting slice of unique elements.
+```
+
+After that, I went over my JSON parser file and refactored it a bit, as well as seeking help over my trusted communities so I could get it working (which I did).
+
+Current code (finished):
+```go
+package main
+
+import (
+	"bufio"
+	"encoding/json"
+	"fmt"
+	"log"
+	"os"
+)
+
+/*
+Exercise: Parse JSON
+
+Task: Write a program that reads a JSON string representing a list
+of people (with fields for name and age) and parses it into a slice of structs.
+Then, print out the names and ages of all people in the list.
+
+STATUS: COMPLETED
+*/
+
+func check(err error) error {
+	if err != nil {
+		// Throw error if the file is NULL
+		log.Fatal(err)
+	}
+	return err
+}
+
+func main() {
+	fmt.Println("This is a JSON parser")
+	// Read entire file at once
+	content, err := os.ReadFile("read.json")
+	check(err)
+
+	// Print content
+	fmt.Println(string(content))
+
+	// Go over the document word by word
+	file, err2 := os.Open("read.json")
+	check(err2)
+
+	scan := bufio.NewScanner(file)
+	scan.Split(bufio.ScanWords)
+
+	// Parse JSON into a struct
+	// JSON decoder
+	parser := json.NewDecoder(file)
+
+	var person people = people{}
+	/*
+		p := people{
+			Name: "Kaneda",
+			Age:  30,
+			City: "Neo Tokyo",
+		}
+	*/
+	err = parser.Decode(&person)
+	if err != nil {
+
+		log.Fatalf("Failed to decode JSON: %s", err)
+	}
+
+	// reflect --> It enables you to examine the type and value of variables dynamically.
+
+	fmt.Printf("Name: %s\n", person.Name)
+	fmt.Printf("Age: %d\n", person.Age)
+	fmt.Printf("City: %s\n", person.City)
+
+	file.Close()
+}
+
+// Struct declaration
+type people struct {
+	Name string
+	Age  uint8
+	City string
+}
+
+```
+
+
+
 ---
 Credits:
 Source of new header's image. [Link](https://unsplash.com/photos/a-woman-sitting-on-a-bed-using-a-laptop-computer-Owglx1TOsiA)
