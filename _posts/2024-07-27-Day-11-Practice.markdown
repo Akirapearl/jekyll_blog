@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 11 to 20 - Practice, Practice, Learn, Practice"
-date:   2024-07-31 15:10:00 +0200
+date:   2024-08-02 15:10:00 +0200
 categories: jekyll update
 ---
 
@@ -21,7 +21,10 @@ New resources:
 
 
 There is also a new header! You can check it's source down below, then again, I do not claim any ownership over it, I just edited it into a more friendly format for my blog and added a text into it using GIMP and Jetbrains Mono font.
+
+
 #### 27/07/2024 - Day 11 
+
 As for today, I went over the goroutines part of my main tutorial of reference, yet could not understand it entirely, thus, I attempted other new exercises that can be found over my Learning Go repo. As for this time, I attempted the Advent of Code's day 1.
 
 Unfortunately, it was an unsuccessful attempt, since I could not get the way to actually take the integers from the string and make them a unified number
@@ -85,6 +88,7 @@ Funny enough, there were some videos over youtube's collection that performed th
 
 
 #### 28/07/2024 - Day 12 
+
 I finished two more exercises! I focused most of my time today on my newly created "batch 2", so I could keep on practicing my already adquired knowledge, it was a bit painful, I might say, since I got a near close to ideal approach for the first exercise, yet failed to comprehend my own code.
 
 ```
@@ -114,6 +118,7 @@ Next step, learning goroutines the proper way, continue with my exercises, and h
 
 As a matter of fact, found more exercises platforms that use Golang. [Link](https://exercism.org/tracks/go/exercises)
 
+
 #### 29/07/2024 - Day 13
 
 Today I did a bit of everything, I went over the third exercise of my second batch (statement below), updated the main README.md for the LearningGo repo...
@@ -135,6 +140,7 @@ interfaces, etc.
 Sidenote that I found some references about working with JSON. [Link](https://www.golinuxcloud.com/read-json-data-format-in-golang/)
 
 Also found some interesting tool built in Go! Yet to confirm whether it is written following best practices etc, but surely enough it can be a starting point to look for projects to contribute or to review, in order to improve my own code. [Gowall tool](https://github.com/Achno/gowall)
+
 
 #### 31/07/2024 - Day 14
 
@@ -243,7 +249,39 @@ type people struct {
 
 ```
 
+Some background information about managing JSON files in Go. [Link](https://medium.com/@chaewonkong/go-and-json-a-comprehensive-guide-to-working-with-json-in-golang-143fa2dfa897)
 
+
+#### 01/08/2024 - Day 15
+
+Today I went over more of the "complicated" basics of GO, those being Channels, Generics and Goroutines, I followed uniquely one tutorial and attempted some minor value changing, thus I am aware that I still have plenty of way to keep learning, yet it is a relief to have managed to go over those concepts at once.
+
+Content for those lessons can be seen at my [repo.](https://github.com/Akirapearl/LearningGo/tree/main/2024/go_fast)
+
+Some code snippets from it:
+```go
+	// Calling a Goroutine
+	// hangs the execution
+	go printNumbers()
+	fmt.Println("Goroutines")
+	time.Sleep(1 * time.Second)
+	//[==========================================]
+	// first generic
+func printItem[T any](item, defaultValue T) (T, T) {
+
+	return item, defaultValue
+}
+
+func main() {
+	fmt.Println("Generics")
+	num1, num2 := printItem(1, 2)
+	num3, num4 := printItem("tres", "quatre")
+	bool1, bool2 := printItem[bool](false, true)
+	fmt.Printf("%v \n%v\n", num1, num2)
+	fmt.Println(num3, num4)
+	fmt.Println(bool1, bool2)
+}
+```
 
 ---
 Credits:
