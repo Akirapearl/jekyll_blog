@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 11 to 20 - Practice, Practice, Learn, Practice"
+title:  "Day 11 to 15 - Practice, Practice, Learn, Practice"
 date:   2024-08-02 15:10:00 +0200
 categories: jekyll update
 ---
@@ -11,10 +11,7 @@ Oh Hi!
 
 At the time of writing I don't really have that much to say, though it might change over the course of this new 5 days, well, let's get to it!
 
-Sidenote:
-
-As per studying more in-depth concepts of Golang, my current go-to tutorial became quite uneasy, for that, I will be changing into other resources, while
-keeping the original handy, since I want to attempt the guided construction of an API that it provides at the very end of it.
+Important note here, as per studying more in-depth concepts of Golang, my current go-to tutorial became quite uneasy, for that, I will be changing into other resources, while keeping the original handy, since I want to attempt the guided construction of an API that it provides at the very end of it.
 
 New resources:
 [Mastering Go: A Comprehensive Guide to Golang Programming](https://youtu.be/N2GWXuj_IWg?si=bLJl86kXxqZwBPmZ&t=8966)

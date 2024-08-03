@@ -1,13 +1,15 @@
 /*Test*/
 @import 
   "minima/skins/{{ site.minima.skin | default: 'dark' }}","minima/initialize", "{{ site.theme }}";
-/*{ expectedscss(css-lcurlyexpected)*/
 
-/*
-.site-header {
+  /*{ expectedscss(css-lcurlyexpected)*/
+
+
+header {
     background-image: linear-gradient(black, grey);
+    z-index: 1;
 }
-
+/*
 .post-link{
   color:palevioletred;
 }
