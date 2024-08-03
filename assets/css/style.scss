@@ -1,10 +1,13 @@
----
----
+/*Test*/
+@import 
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}","minima/initialize";
+/*{ expectedscss(css-lcurlyexpected)*/
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
 
-header {
-    background-image: linear-gradient(black, grey) !important;
+.site-header {
+    background-image: linear-gradient(black, grey);
+}
+
+.post-link{
+  color:palevioletred;
 }
