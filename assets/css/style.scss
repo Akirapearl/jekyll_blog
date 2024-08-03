@@ -1,9 +1,9 @@
 /*Test*/
 @import 
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}","minima/initialize", "{{ site.theme }}";
+  "minima/skins/{{ site.minima.skin | default: 'dark' }}","minima/initialize", "{{ site.theme }}";
 /*{ expectedscss(css-lcurlyexpected)*/
 
-
+/*
 .site-header {
     background-image: linear-gradient(black, grey);
 }
@@ -11,3 +11,4 @@
 .post-link{
   color:palevioletred;
 }
+  */
