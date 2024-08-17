@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 16 to 20 - Projects, courses, ideas, exercises..."
-date:   2024-08-02 15:10:00 +0200
+date:   2024-08-17 17:30:00 +0200
 categories: jekyll update
 ---
 
@@ -246,4 +246,59 @@ I also finished Exercise 3 from my third batch!. [Link](https://github.com/Akira
 Lastly, found even more resources as well, this particular one related to how can Golang be tied to Devops practices, etc. [Link](https://www.youtube.com/watch?v=xmZK-kUj9l0&list=PL7g1jYj15RUMdka_gPLDCFrIhwjtvCLJD)
 
 
-#### (Peding)  - Day 19
+#### 13/08/2024 - 14/08/2024 - Day 19
+
+This time I joined both days since one was disclosed as a preparation one (get repos locally, figure out README files, choose projects to achieve etc) and the second one was more oriented to actual coding time.
+
+This time, I created two new repos for some self-proposed projects!
+
+Repo 1: [Password Manager](https://github.com/Akirapearl/Go-password-manager)
+```
+    Duration (estimated): 30 days
+    Description:
+        Start with building a basic CLI-based password manager that allows CRUD operations on passwords stored in a CSV file.
+        Implement encryption for password storage.
+        Transition to a web application using a framework like Gin or Echo.
+        Use RESTful APIs for CRUD operations.
+        Add user authentication and session management.
+        Learn about pointers by managing memory efficiently and interfaces by creating mock tests.
+    Key Concepts: Pointers, interfaces, methods, RESTful APIs, encryption, file handling.
+```
+
+Repo 2: [Url Shortener] (https://github.com/Akirapearl/Go-url-shortener/tree/main)
+
+*Based on the gophercises exercise.
+```
+    Duration(estimated): 15 days
+    Description:
+        Build a simple URL shortener that maps long URLs to short ones.
+        Implement CRUD operations to manage URLs.
+        Use a database (like SQLite or PostgreSQL) to store the mappings.
+        Implement concurrency with goroutines to handle multiple requests.
+        Add user authentication and usage analytics.
+    Key Concepts: Goroutines, concurrency, database integration, RESTful APIs.
+```
+
+The main idea behind creating both repos at the same time is not to burn myself out too much into a single thing. While I can still do exercises and all, my main focus is to be shifted into this projects, thus, if I step into a particular road block, changing the scope or my attention into a different topic within my learning process will help to solve it once I get back to it.
+
+Both exercises will require me to jump back and forth and go into some investigation times that might not be directly looking into the stuff I need, but to know how to perform a similar thing (i.e how to code an API, how to connect to a database, etc).
+
+Moreover, I did also finish exercise 4 from the third batch of exercises I've been doing. [Link](https://github.com/Akirapearl/LearningGo/tree/main/2024/exercises/batch_3)
+
+##### Quick mention: 13/08/2024
+
+Golang 1.23 was released!. [link](https://tip.golang.org/doc/go1.23) [Release notes](https://go.dev/doc/go1.23)
+
+
+#### 17/08/2024 - Day 20
+
+Today I quickstarted yet another repo, oriented for exercism proposed scripts only, for which I finished two of them, ideally I would be doing one exercise per day, non-sequentially, until there are no more exercise left. [link](https://github.com/Akirapearl/Go-exercism)
+
+As per the major projects matter, I attempted to get into the url shortener one, yet it felt quite outside my current knowledge, for that, I
+have already started to look into [Let's Go by Alex Edwards](https://lets-go.alexedwards.net/) and other web and [http-related tutorials](https://youtu.be/HO8RvUEeIgU?si=HK-MeRaWcGmt4Xhu), taking into consideration that its first two chapters are available publicly, it might be enough to cover this project.
+
+---
+
+So...so far so long I've reached the first fifth of this challenge, huh? I might do a separate post covering the general resources I've found, next to my progress and general impression of my own learning during this 20-ish days of coding.
+
+That being said, see you next time!.
