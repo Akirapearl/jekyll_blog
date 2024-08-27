@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 21 to ... - I know Code-fu now...(Show me)"
-date:   2024-08-21 21:30:00 +0200
+date:   2024-08-24 11:30:00 +0200
 categories: jekyll update
 ---
 
@@ -13,7 +13,7 @@ Oh Hi!
 
 #### 19/08/2024 & 21/08/2024 - Turn to page 394... (Day 21)
 
-Overall I took it easy and started of smoothly enough, covering the first ~50 pages. At the time of writing I have the following code, covering the first two chapters of the book.
+Overall I took it easy and started of smoothly enough, covering the first ~50 pages. At the time of writing I have the following code, covering almost entirely the first two chapters of the book.
 
 Then again, I joined two days since both were focused into going through this book.
 
@@ -129,4 +129,61 @@ func main() {
 
 I'd say that now I have a better comprehension of how does most basic net/http code work with Golang, which was a previous struggling point, as I could not follow [Go web examples](https://gowebexamples.com/) that easily.
 
-#### /08/2024 - Day 22
+
+#### 24/08/2024 - Day 22
+
+Let's get hands on with a project! shall we? I started with a url shortener! My main reason for this is that it would help me revisit some concepts I've just learned via Let's Go book, as well as introducing other aspects of Golang that I might have missed to this point, or may be not used that much.
+
+For reference, I followed a specific youtube video, yet then I refactorized the code to not use any external framework or library as Gorilla Mux. [Video](https://www.youtube.com/watch?v=HBirbA5-xiA)
+
+```go
+package main
+
+import (
+	"crypto/md5"
+	"fmt"
+	"log"
+	"net/http"
+	"strings"
+)
+
+var urlStore = make(map[string]string)
+
+func shorten(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	url := r.Form.Get("url")
+	shortURL := fmt.Sprintf("%x", md5.Sum([]byte(url)))[:5]
+	urlStore[shortURL] = url
+	fmt.Fprintf(w, "http://localhost:8080/%s\n", shortURL)
+}
+
+func redirect(w http.ResponseWriter, r *http.Request) {
+	shortURL := strings.TrimPrefix(r.URL.Path, "/")
+	oUrl, ok := urlStore[shortURL]
+	if ok {
+		http.Redirect(w, r, oUrl, http.StatusMovedPermanently)
+	} else {
+		http.NotFound(w, r)
+	}
+}
+
+func main() {
+	r := http.NewServeMux()
+	r.HandleFunc("POST /create", shorten)
+	r.HandleFunc("GET /{shortURL}", redirect)
+	log.Print("Starting server on port :8080...")
+	log.Fatal(http.ListenAndServe(":8080", r))
+
+}
+```
+
+
+![functioning code](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/url_short.png)
+
+As for now it works like a charm! Yet I find some potential improving lines, potentially implemented over time, once I get more experience with this programming language:
+
+```
+	- Make it as a web service with GUI (Adding styles etc)
+	- Add shortened urls to a CSV file or a database, so later on those can be checked again and quickly accessed
+```
+
