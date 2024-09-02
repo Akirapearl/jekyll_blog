@@ -187,3 +187,5 @@ As for now it works like a charm! Yet I find some potential improving lines, pot
 	- Add shortened urls to a CSV file or a database, so later on those can be checked again and quickly accessed
 ```
 
+
+
