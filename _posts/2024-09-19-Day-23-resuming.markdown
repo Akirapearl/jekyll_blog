@@ -193,14 +193,14 @@ Now, what do I want to do for the next 25 days, as realistic as possible:
 	- Continue with Let's Go book (Assuming I won't finish it yet)
 	- To-do list? Password manager?
 	- Creating and using APIs 
-	- Expense tracker (TUI/Web based GUI)
+	- Expense tracker (TUI/Web based UI)
 
 
 3 - Future goals?
 	- Web scrapper
 	- Pomodoro website
 	- MySQL library (easy to use Query/CRUD), kinda like meekro for php
-	- Some Linux related tool - Networking, SwayWM...
+	- Linux related tool - Networking, SwayWM...
 	- Discord bot?
 		- User ranking by how many messages they have sent
 ```
@@ -213,8 +213,8 @@ code is over, here it is the result thus far!
 ![showoff_letsgo](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/checkgo.png)
 
 
-
 #### 24/09/2024 - Day 26
+
 
 I'm on holidays for three weeks! Besides two trips I got to do due to personal affairs, I'm going to try it out to take advantage of this time and do a bit more every day programming-wise.
 
@@ -244,6 +244,20 @@ func SortNumbers(numbers []int) []int {
 On the other hand, I want to keep an eye over my non-mastered topics, so I looked back into my go-to tutorials and stuff and gave it a spin to learn some missing concepts, as Go routines, Channels, Interfaces...Also starting to check about API-related concepts.
 
 ![showoff_learning](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/revisit.png)
+
+
+#### 25/09/2024 - Day 27
+
+So, today I started over a fresh project, a terminal-based password manager!. As for now, it has an externalized file where
+basic functions are put onto, at the time of writing I have designed it to check that a file passed as an input exists and whether it is a CSV file or not.
+
+For this I have applied a minor lesson learned from the Let's Go book, which consists into creating a "internal" directory, where the logic can be stored within functions, outside from the main file.
+
+Brief screenshot of the current code:
+
+![password_coding](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/code_passwd.png)
+
+
 
 ---
 More info:
