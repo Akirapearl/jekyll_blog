@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 23 - Resuming, getting it back together"
-date:   2024-09-24 15:10:00 +0200
+date:   2024-10-03 18:20:00 +0200
 categories: jekyll update
 ---
 
@@ -258,7 +258,40 @@ Brief screenshot of the current code:
 ![password_coding](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/code_passwd.png)
 
 
+#### 03/10/2024 - Day 28
 
+Ookay, I had to take sometime out because of a trip to my hometown and some family stuff to attend to, now that I'm back, let's se what I've done so far.
+
+First of, I've continued with the Let's Go book, getting deeper into the refactoring and error handling part of the process, prior to move into a bigger code, with more functionality and stuff, I'm really loving the learning experience thus far with this book.
+
+Secondly, I updated the code for my Password Manager project, apparently I was following some practices that do make sense for webpages, yet it would not apply for this specific project, instead of using the internal directory, I created a new one called validation, so all checks to be done over the passed CSV file are verified one by one on a properly exported function file (part of a smaller Go package called validation). 
+
+After that, I fixed a "minor" issue with my flux control, which did all the actions if the code was correct, otherwise throwing error, which should have been done with a more "programmer mindset" approach, let me explain it a bit better.
+
+With my approach, the conditional looked somewhat like this:
+
+```go
+
+if true {
+	//do something
+} else {
+	error
+}
+```
+
+While the proper approach would need to be like this:
+```go
+
+if !true {
+	error
+} else { //implies true
+	//continue with the code
+}
+```
+
+This means that, if the code goes wrong, or the condition DOES NOT MATCH, the code will stop with an error code, otherwise, it can proceed and continue.
+
+For further details, check my [repo](https://github.com/Akirapearl/Go-password-manager)!
 ---
 More info:
 
