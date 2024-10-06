@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Day 21 to ... - I know Code-fu now...(Show me)"
-date:   2024-08-24 11:30:00 +0200
+title:  "Day 21 & 22 - I know Code-fu now...(Show me)"
+date:   2024-08-22 17:30:00 +0200
 categories: jekyll update
 ---
 
