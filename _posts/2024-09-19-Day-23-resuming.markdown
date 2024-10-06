@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 23 - Resuming, getting it back together"
+title:  "Day 23 to 30 - Resuming, getting it back together"
 date:   2024-10-06 15:30:00 +0200
 categories: jekyll update
 ---
@@ -325,7 +325,7 @@ Here it is the current approach, solely for the write part of a single line.
 
 ```
 
-#### 05/10/2024 && 06/10/2024 - Day 29 & Day 30
+#### 05/10/2024 && 06/10/2024 - Day 30 & 31
 
 I fixed it!
 
