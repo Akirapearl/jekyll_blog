@@ -260,7 +260,7 @@ Brief screenshot of the current code:
 
 #### 03/10/2024 - Day 28
 
-Ookay, I had to take sometime out because of a trip to my hometown and some family stuff to attend to, now that I'm back, let's se what I've done so far.
+Ookay, I had to take sometime out because of a trip to my hometown and some family stuff to attend to, now that I'm back, let's see what I've done so far.
 
 First of, I've continued with the Let's Go book, getting deeper into the refactoring and error handling part of the process, prior to move into a bigger code, with more functionality and stuff, I'm really loving the learning experience thus far with this book.
 
@@ -292,12 +292,107 @@ if !true {
 This means that, if the code goes wrong, or the condition DOES NOT MATCH, the code will stop with an error code, otherwise, it can proceed and continue.
 
 For further details, check my [repo](https://github.com/Akirapearl/Go-password-manager)!
+
+
+#### 04/10/2024 - Day 29
+
+Well, switching back between the learning process that the Let's Go book provides and my own project can be detrimental to focus, but also gives me a feeling
+that I'm progressing both into knowledge and coding ability.
+
+Today I continued commenting the project and added the write file, which shall contain functions to solely write single or multiple lines to the CSV file that contains the expected user - account - password content.
+
+Here it is the current approach, solely for the write part of a single line.
+
+```go
+
+	// Open the CSV file for appending
+	fileW, err := os.OpenFile("test.csv", os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
+
+	if err != nil {
+		return err
+	}
+
+	// Create a CSV writer
+	writer := csv.NewWriter(fileW)
+	defer writer.Flush()
+
+	// Write a new row to the CSV file
+	row := []string{"NinjaPop", "Google", "P@ssw0rd"}
+	err = writer.Write(row)
+	if err != nil {
+		panic(err)
+	}
+
+```
+
+#### 05/10/2024 && 06/10/2024 - Day 29 & Day 30
+
+I fixed it!
+
+As the code shown right above wouldn't work, I reached out the Golang community discord server, where I placed a help request explaining my approach and shared the involved part of my code and, within the following hours (and in the end, the following day) I succeded to make it work as expected!
+
+This is my current code so far for the insert/write operation:
+
+main.go
+```go
+[...]
+	var path string
+	fmt.Scan(&path)
+[...] // Checks file is a CSV etc
+
+	// Read content first
+	fmt.Println("=== Current content of your file ===")
+	read.ReadFile(path)
+
+	// Write single line to file
+	change.WriteLine(path)
+
+	fmt.Println("=== Updated content of your file - Insert ===")
+	read.ReadFile(path)
+```
+
+write.go
+```go
+package change
+
+import (
+	"encoding/csv"
+	"os"
+)
+
+func check(err error) error {
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func WriteLine(file string) {
+	// Open the CSV file for appending
+	fileW, err := os.OpenFile(file, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
+
+	// Create a CSV writer
+	writer := csv.NewWriter(fileW)
+
+	// Write a new row to the CSV file
+	// randomly generated/mock credentials - not a real user
+	// Expected structure for the CSV is [user,account/site, password]
+	row := []string{"NinjaPop", "Google", "P@ssw0rd"}
+	err = writer.Write(row)
+	check(err)
+	writer.Flush()
+}
+
+```
+
+So...that's it for this 10 days stretch! Next time I guess I shall create a new entry so this one stays at an acceptable size.
+
+See you next time!
+
 ---
 More info:
 
 Lasagna Master: [Link](https://exercism.org/tracks/go/exercises/lasagna-master)
-
-D&D Character: [Link](https://exercism.org/tracks/go/exercises/dnd-character)
 
 View-controller model: [Link](https://www.codecademy.com/article/mvc)
 
