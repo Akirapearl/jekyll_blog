@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Day 32 - Keeping the pace is actually hard"
+date:   2024-09-09 17:10:00 +0200
+categories: jekyll update
+---
+
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/C0mP_Mac.png)
+
+### Quick note about the duration of this challenge
+
+Back on the seventh of October, I made it to the technically 92th day of this challenge, if I were to do at least an hour of coding
+somehow each day, but it is not as easy when you have a full-time job, other studies ongoing (as for myself, I'm also currently studying
+catalonian) and other obligations. 
+
+I've already accepted that I won't be able to finish this challenge by the expected date goal (November 19th), yet I believe that making this
+learning process part of my routine until the end of the year or so, updating this blog with my progress and my will to learn should be fine
+
+I don't want to make excuses, yet it is true that I feel how life has goten in between, making me a bit of lack in practice and context for what
+I came to learn upon this point.
+
+That being said, let's get back to it.
+
+#### Day 32 - 25/10/2024
+
+Today I kept it easy on myself and got back to the book I was reading, I finished another chapter! This one was about error handling and logging.
+Now I am on the verge of getting introduced to how to use MySQL databases and all, also almost finished the first quarter of the book thus far!,
+so I think that stopping here and focusing onto the CRUD part of my own project would be interesting to know, so when I learn about databases I can actually apply it on my own project of sorts.
+
+#### Day 33 - 26/10/2024
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 23 to 30 - Resuming, getting it back together"
+title:  "Day 23 to 31 - Resuming, getting it back together"
 date:   2024-10-06 15:30:00 +0200
 categories: jekyll update
 ---
