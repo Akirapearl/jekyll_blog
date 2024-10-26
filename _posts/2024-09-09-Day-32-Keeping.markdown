@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "Day 32 - Keeping the pace is actually hard"
+date:   2024-10-25 17:10:00 +0200
+categories: jekyll update
+---
+
+
+![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/maik-jonietz.jpg)
+About: Photo by <a href="https://unsplash.com/@der_maik_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maik Jonietz</a> on <a href="https://unsplash.com/photos/program-script-digital-wallpaper-_yMciiStJyY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+### Quick note about the duration of this challenge
+
+Back on the seventh of October, I made it to the technically 92th day of this challenge, if I were to do at least an hour of coding
+somehow each day, but it is not as easy when you have a full-time job, other studies ongoing (as for myself, I'm also currently studying
+catalonian) and other obligations. 
+
+I've already accepted that I won't be able to finish this challenge by the expected date goal (November 19th), yet I believe that making this
+learning process part of my routine until the end of the year or so, updating this blog with my progress and my will to learn should be fine
+
+I don't want to make excuses, yet it is true that I feel how life has goten in between, making me a bit of lack in practice and context for what
+I came to learn upon this point.
+
+That being said, let's get back to it.
+
+#### Day 32 - 25/10/2024
+
+Today I kept it easy on myself and got back to the book I was reading, I finished another chapter! This one was about error handling and logging.
+Now I am on the verge of getting introduced to how to use MySQL databases and all, also almost finished the first quarter of the book thus far!,
+so I think that stopping here and focusing onto the CRUD part of my own project would be interesting to know, so when I learn about databases I can actually apply it on my own project of sorts.
+
+#### Day 33 - 26/10/2024
+
+Got back to code, in short, I introduced the capability for my [password manager]() to ask multiple times to introduce values onto the CSV file, this enables 
+the user to not need to execute the script multiple times until all records are introduced.
+
+As seen at main.go file:
+
+```go
+for {
+		// Write single line to file
+		change.WriteLine(path)
+
+		fmt.Println("=== Updated content of your file - Insert ===")
+		fmt.Printf("\n")
+		read.ReadFile(path)
+
+		fmt.Println("\n Do you want to enter more data?[y/n]")
+
+		var respData string
+		fmt.Scan(&respData)
+
+		if respData != "y" && respData != "Y" {
+			break
+		}
+		fmt.Print("\033[;1H\033[2J")
+	}
+```
+
+And the improved called function from write.go file:
+
+```go
+func WriteLine(file string) {
+	// Ask for values to be added to the file
+	fmt.Println("Introduce your username")
+
+	var dataWrite [3]string
+	fmt.Scan(&dataWrite[0])
+
+	fmt.Println("Now, introduce the site or URL for your user (i.e: Google / 'www.google.com')")
+	fmt.Scan(&dataWrite[1])
+
+	fmt.Println("Finally, introduce your password")
+	fmt.Scan(&dataWrite[2])
+
+	// Open the CSV file for appending
+	fileW, err := os.OpenFile(file, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
+
+	// Create a CSV writer
+	writer := csv.NewWriter(fileW)
+
+	// Write a new row to the CSV file
+	// Current placed credentials were randomly generated and don't represent a real user
+	// Expected structure for the CSV is [user,account/site, password]
+	row := []string{dataWrite[0], dataWrite[1], dataWrite[2]}
+	err = writer.Write(row)
+	check(err)
+	writer.Flush()
+}
+```
