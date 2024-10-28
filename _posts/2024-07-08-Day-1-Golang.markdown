@@ -17,22 +17,19 @@ so the original authors can be properly reflected.
 
 ### So, about DAY 1's intentionality, setup and original concept
 
-Truth being told, it can bee seen at this very same repo that there were a bunch of commits, oriented to a previous idea I took 
-for this very same challenge, even so, I decided to move on from a wider and way more complex objective, in favor of a more focused
-and feasible objective, which will be to become more experienced with Golang.
+Truth being told, I started over with a different idea I took for this very same challenge which was to re-learn Ansible and get to know more about web developing by learning JS and React, even so, I decided to move on from that wider and way more complex objective, to a more focused
+and feasible one, which will be to become more experienced with Golang.
 
-The original idea's progress can be briefly seen below.
+The original idea's progress can be briefly seen here.
 
 ![original idea](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/previous.png)
 
-Moving on, how does my current setup look like? Well, my current Operative System is PopOS, running on a custom PC, I already have Golang
+On the other hand, how does my current setup look like? Well, my current Operative System is PopOS, running on a dyi PC, I already have Golang
 installed on its almost latest version (currently 1.22.2, at the time of writing latest is 1.22.5).
 
 ![setup](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/setup.png)
 
-My idea with this project, as vaguely described at Day 0's post, is adding further possibilities to my knowledge toolbox. As Golang
-is a multi-purpose programming language, I will set the goal into learning as much as I can build a tool or proper snippet of code of my own,
-starting from scratch.
+My idea with this project, as vaguely described at Day 0's post, is adding further possibilities to my knowledge toolbox.
 
 ### What now? Where do I start learning?
 

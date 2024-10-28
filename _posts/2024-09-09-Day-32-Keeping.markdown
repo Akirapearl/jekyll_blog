@@ -12,14 +12,15 @@ About: Photo by <a href="https://unsplash.com/@der_maik_?utm_content=creditCopyT
 
 ### Quick note about the duration of this challenge
 
-Back on the seventh of October, I made it to the technically 92th day of this challenge, if I were to do at least an hour of coding
-somehow each day, but it is not as easy when you have a full-time job, other studies ongoing (as for myself, I'm also currently studying
+Back on October 7th, I made it to the technically 92th day of this challenge if I would have done at least an hour of coding each day, 
+but it is not as easy when you have a full-time job, other studies ongoing (as for myself, I'm also currently studying
 catalonian) and other obligations. 
 
 I've already accepted that I won't be able to finish this challenge by the expected date goal (November 19th), yet I believe that making this
-learning process part of my routine until the end of the year or so, updating this blog with my progress and my will to learn should be fine
+learning process part of my routine until the end of the year or so, updating this blog with my progress and my will to learn should be fine as well, learning
+is a process, a marathon of sorts, not a speedrun.
 
-I don't want to make excuses, yet it is true that I feel how life has goten in between, making me a bit of lack in practice and context for what
+I don't want to make excuses, yet it is true that I feel how life has gotten in between, making me a bit of lack in practice and context for what
 I came to learn upon this point.
 
 That being said, let's get back to it.
@@ -32,7 +33,7 @@ so I think that stopping here and focusing onto the CRUD part of my own project 
 
 #### Day 33 - 26/10/2024
 
-Got back to code, in short, I introduced the capability for my [password manager]() to ask multiple times to introduce values onto the CSV file, this enables 
+Got back to code, in short, I introduced the capability for my [password manager](https://github.com/Akirapearl/Go-password-manager/tree/main) to ask multiple times to introduce values onto the CSV file, this enables 
 the user to not need to execute the script multiple times until all records are introduced.
 
 As seen at main.go file:
@@ -87,5 +88,104 @@ func WriteLine(file string) {
 	err = writer.Write(row)
 	check(err)
 	writer.Flush()
+}
+```
+
+#### Day 34 - 27/10/2024
+
+Here in Spain we have something totally unnecesary that is the time change twice a year, this particular one was to move from summer to winter time, or at least
+that's the common justification, that made me mostly become really dizzy and lazy for the day, BUT, I achieved some minor progress over my password manager.
+
+Now I have a new file totally dedicated to update entries already existent within the provided CSV file, as for now it requires to enter all three parameters
+in order to verify it exists, but I would like to explore a different approach in the future, if necessary. 
+
+```go
+package change
+
+import "fmt"
+
+func UpdateLine(file string) {
+	// Ask for values to check
+	fmt.Println("Update mode - Introduce your username")
+
+	var dataUpdate [3]string
+	fmt.Scan(&dataUpdate[0])
+
+	fmt.Println("Now, introduce the site or URL for your user (i.e: Google / 'www.google.com')")
+	fmt.Scan(&dataUpdate[1])
+
+	fmt.Println("Finally, introduce your password")
+	fmt.Scan(&dataUpdate[2])
+
+	// Validate if field exists
+
+	fmt.Println("Which field do you want to change?", dataUpdate[0], dataUpdate[1], dataUpdate[2])
+
+}
+```
+
+I made it part of the change package, so I might be able to re-utilize the check function for error verification
+
+```go
+func check(err error) error {
+	if err != nil {
+		return err
+	}
+	return nil
+}
+```
+
+#### Day 35 - 28/10/2024
+
+Keeping it up with the update process, I achieved to create a separate case for verification, that is in charge of modifying the array's value into a new one also
+passed by the user as an input.
+
+current status:
+
+```go
+package change
+
+import "fmt"
+
+func switchValidate(v int, old *[3]string, new string) string {
+	switch v {
+	case 0:
+		old[0] = new
+		fmt.Printf("New value is: %v", new)
+	case 1:
+		old[1] = new
+		fmt.Printf("New value is: %v", new)
+	case 2:
+		old[2] = new
+		fmt.Printf("New value is: %v", new)
+	default:
+		fmt.Println("The number is wrong!")
+	}
+	return "none"
+}
+func UpdateLine(file string) {
+	// Ask for values to check
+	fmt.Println("Update mode - Introduce your username")
+
+	var dataUpdate [3]string
+	fmt.Scan(&dataUpdate[0])
+
+	fmt.Println("Now, introduce the site or URL for your user (i.e: Google / 'www.google.com')")
+	fmt.Scan(&dataUpdate[1])
+
+	fmt.Println("Finally, introduce your password")
+	fmt.Scan(&dataUpdate[2])
+
+	// Validate/Verify if field exists
+	fmt.Println("Which field do you want to change [0/1/2]?", dataUpdate[0], dataUpdate[1], dataUpdate[2])
+	var updatePrompt int
+	fmt.Scan(&updatePrompt)
+
+	fmt.Println("Which value would you like to assign to that field? ")
+	var newPrompt string
+	fmt.Scan(&newPrompt)
+
+	//Pass value alongside the content of the array
+	switchValidate(updatePrompt, &dataUpdate, newPrompt)
 }
 ```
