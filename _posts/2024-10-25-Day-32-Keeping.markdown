@@ -392,4 +392,4 @@ from my own code.
 
 Now, this entry is long enough, and I've reached another goal, getting to the 40th day!
 
-! [Izma iconic pull the lever kronk scene](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/izmakronk.gif)
+![Izma iconic pull the lever kronk scene](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/izmakronk.gif)
