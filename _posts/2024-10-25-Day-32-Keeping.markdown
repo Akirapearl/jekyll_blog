@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 32 - Keeping the pace is actually hard"
-date:   2024-10-25 17:10:00 +0200
+date:   2024-11-03 17:20:00 +0200
 categories: jekyll update
 ---
 
