@@ -6,6 +6,8 @@ categories: jekyll update
 ---
 
 ![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/C0mP_Mac.png)
+Photo by <a href="https://unsplash.com/@lookforyash?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yash Parashar</a> on <a href="https://unsplash.com/photos/a-woman-sitting-on-a-bed-using-a-laptop-computer-Owglx1TOsiA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
 
 Oh Hi!
 
@@ -279,7 +281,3 @@ func main() {
 	fmt.Println(bool1, bool2)
 }
 ```
-
----
-Credits:
-Source of new header's image. [Link](https://unsplash.com/photos/a-woman-sitting-on-a-bed-using-a-laptop-computer-Owglx1TOsiA)

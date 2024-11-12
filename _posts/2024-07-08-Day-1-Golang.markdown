@@ -7,7 +7,8 @@ categories: jekyll update
 
 
 ![custom header](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/SrewPUfo2c0.png)
-
+Photo by <a href="https://unsplash.com/@davidschultz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Schultz</a> on <a href="https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-near-blue-and-white-sky-SrewPUfo2c0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
 
 Welcome to my very first day at the 100 days of code trip!
 
@@ -44,6 +45,3 @@ That would be it for this one,
 
 See you next time!
 
----
-#### Credits:
-[Challenge original image](https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-near-blue-and-white-sky-SrewPUfo2c0)
