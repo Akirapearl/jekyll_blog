@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 40 to 50 - Advent of code - Round 2"
-date:   2024-11-03 17:20:00 +0200
+date:   2024-11-13 17:20:00 +0200
 categories: jekyll update
 ---
 
@@ -170,5 +170,25 @@ func main() {
 
 ```
 
-#### Day 12 - 12/11/2024
+#### Day 42 - 12/11/2024
+
+Day 2 is over! By now I have already done over twice I could back on my first attempt of the Advent of code this year. Yet it is true I needed quite some help, not only from
+friends but online too, but I got it done!
+
+See my code!. [repo](https://github.com/Akirapearl/Advent-of-code-2024/blob/main/day2/main.go)
+
+#### Day 43 - 13/11/2024
+
+Ok so I might have reached a roadblock, one particularly hard that made me go a step back before moving forward, this roadblock was non other than Day 3 of Advent of code. It's proposal is,
+conceptualy speaking, easy enough to understand, it is with its implementation where I've struggled the most.
+
+On the other hand, I came to know that I totally forgot to go over both Day 1 and Day 2 part 2 statements, each of those give an extra layer of difficulty to the original problem, so I'll try
+to figure those two out on the following days.
+
+#### Day 44 - 14/11/2024
+
+I finished yet another (part of a) day in my advent of code attempt! Yet, it is true that my approach was heavily based on a script that was not made by me. [Resouce](https://github.com/prathamesh-88/advent-of-code-2023/blob/master/Day01/trebuchet2.go)
+
+Total credits go to said developer's effort and talent, I just based my approach on their script, but in order to avoid just copy-pasting, I rephrased it so instead 
+of using a map of key/pair associating numbers (integers) to its equivalent as a string (i.e One:"one", index would be 1).
 
