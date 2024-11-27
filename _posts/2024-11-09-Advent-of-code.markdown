@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 40 to 50 - Advent of code - Round 2"
+title:  "Day 40 to 43 - Advent of code - Round 2"
 date:   2024-11-13 17:20:00 +0200
 categories: jekyll update
 ---
@@ -10,7 +10,9 @@ categories: jekyll update
 
 #### Day 40 - 09/11/2024
 
-[Advent of code!](https://adventofcode.com/2024/about) For those that don't know what I'm talking about, this concept is based on a daily coding challenge for the month of december, that might be attempted in any language desired by us, and it gets increasingly more difficult as the days go by. I attempted to do it earlier within this 100-days-of-code challenge, yet I lacked of some background/experience both with Golang and the proposal in on itself.
+[Advent of code!](https://adventofcode.com/2024/about) For those that don't know what I'm talking about, this concept is based on a daily coding challenge for the month of december, 
+that might be attempted in any language desired by us, and it gets increasingly more difficult as the days go by. I attempted to do it earlier within this 100-days-of-code challenge, 
+yet I lacked of some background/experience both with Golang and the proposal in on itself.
 
 This is my now succesfully submited code, using as reference December 1, 2023's proposal.
 
@@ -74,6 +76,8 @@ func main() {
 I will try to complete AT LEAST the first 7 days/week of the proposals from Dec,2023 before moving on to new projects or ideas, which at the moment are
 ```
     - Create an API client that retrieves weather information 
+		- Idea: https://github.com/Rizen54/richweather
+	- Create a TTY-UI pomodoro tool
 ```
 For reference, [check my repo](https://github.com/Akirapearl/Advent-of-code-2024/tree/main)
 
@@ -177,7 +181,7 @@ friends but online too, but I got it done!
 
 See my code!. [repo](https://github.com/Akirapearl/Advent-of-code-2024/blob/main/day2/main.go)
 
-#### Day 43 - 13/11/2024
+#### Day 43 - 13/11/2024 - Day 44 - 14/11/2024
 
 Ok so I might have reached a roadblock, one particularly hard that made me go a step back before moving forward, this roadblock was non other than Day 3 of Advent of code. It's proposal is,
 conceptualy speaking, easy enough to understand, it is with its implementation where I've struggled the most.
@@ -185,10 +189,21 @@ conceptualy speaking, easy enough to understand, it is with its implementation w
 On the other hand, I came to know that I totally forgot to go over both Day 1 and Day 2 part 2 statements, each of those give an extra layer of difficulty to the original problem, so I'll try
 to figure those two out on the following days.
 
-#### Day 44 - 14/11/2024
 
-I finished yet another (part of a) day in my advent of code attempt! Yet, it is true that my approach was heavily based on a script that was not made by me. [Resouce](https://github.com/prathamesh-88/advent-of-code-2023/blob/master/Day01/trebuchet2.go)
+
+On the 14th I finished yet another (part of a) day in my advent of code attempt! Yet, it is true that my approach was heavily based on a script that was not made by me. [Resouce](https://github.com/prathamesh-88/advent-of-code-2023/blob/master/Day01/trebuchet2.go)
 
 Total credits go to said developer's effort and talent, I just based my approach on their script, but in order to avoid just copy-pasting, I rephrased it so instead 
 of using a map of key/pair associating numbers (integers) to its equivalent as a string (i.e One:"one", index would be 1).
 
+### Birthday break 
+
+The entire week from the 18th to 24th of November was a bit of a mess, I went to a concert from a different city of my current residence, I stayed there two days-ish and then came back to work and
+to celebrate with my friends and to spend time with a friend of mine that flew to Barcelona so we could be together during the weekend.
+
+I think I have a bit of overdue with my programming journey, so let's get back to it! (See you at the next post!)
+
+![bday image](https://raw.githubusercontent.com/Akirapearl/jekyll_blog/main/assets/images/vsj7vnqTobc.jpg)
+---
+Photo by <a href="https://unsplash.com/@fssevero?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Fabrício Severo</a> on <a href="https://unsplash.com/photos/selective-focus-photography-of-happy-birthday-balloon-vsj7vnqTobc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
