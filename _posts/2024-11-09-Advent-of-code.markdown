@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 40 to 43 - Advent of code - Round 2"
-date:   2024-11-13 17:20:00 +0200
+date:   2024-11-14 17:20:00 +0200
 categories: jekyll update
 ---
 
@@ -198,8 +198,8 @@ of using a map of key/pair associating numbers (integers) to its equivalent as a
 
 ### Birthday break 
 
-The entire week from the 18th to 24th of November was a bit of a mess, I went to a concert from a different city of my current residence, I stayed there two days-ish and then came back to work and
-to celebrate with my friends and to spend time with a friend of mine that flew to Barcelona so we could be together during the weekend.
+The entire week from the 18th to 24th of November was a bit of a mess, I went to a concert at a different city, I stayed there for two days-ish and then came back to work and
+to celebrate with my friends.A friend of mine flew to Barcelona so we could be together during the weekend as well.
 
 I think I have a bit of overdue with my programming journey, so let's get back to it! (See you at the next post!)
 
