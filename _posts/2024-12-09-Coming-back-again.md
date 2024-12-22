@@ -161,6 +161,24 @@ func main() {
 
 ```
 
-For sure it can be improved and 
+
 So...what's next? I recall that I did stop my progress with Let's Go book by the point where it covers Database connections and all that, so my idea for the next iteration
 of this particular project is to transform my [local API into a REST API using MongoDB](https://www.youtube.com/watch?v=y2M-dbT6bSs).
+
+#### Day 48 - 22/12/2024
+
+Actually... May be I started too far from reality, it is true that working directly with a NoSQL database would be easier to extrapolate values from the current exercise I did following Golang's site
+tutorial, though I also have some experience with SQL, so why not take chance to do a bit of a journey?
+
+
+First, I will be learning about connecting to SQL databases, for that, I will be using a Debian 12 VM that will have eventually installed both MySQL and MongoDB servers, using a bridge network interface should be 
+fine to get this result, so far I got a successful ping connectivity. This also gave a bit of a refresh about installing mysql server and how to create and manage databases. 
+[Source 1](https://www.digitalocean.com/community/tutorials/how-to-install-the-latest-mysql-on-debian-10) [Some Documentation I used to confirm my recent applied changes](https://dev.mysql.com/doc/refman/8.0/en/getting-information.html)
+
+For the step above I also have some guidance over Let's Go book by Alex Edwards and the already disclaimed Golang community server at Discord.
+
+
+Secondly, I will be using JSON data within MySQL, giving more a clear approach to using both REST API responses in JSON format AND MySQL at the same time. [Source](https://www.digitalocean.com/community/tutorials/working-with-json-in-mysql)
+
+
+And the ideal last step would be to use MongoDB (or any other JSON-based DB) to be called by the REST API client. [Tutorial resource](https://dev.to/aquibpy/go-and-mongodb-building-a-crud-api-from-scratch-10p6)
