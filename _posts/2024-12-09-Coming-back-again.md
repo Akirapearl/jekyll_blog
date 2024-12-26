@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reaching day 50 - Coming back again"
-date:   2024-12-15 21:20:00 +0200
+date:   2024-12-23 21:20:00 +0200
 categories: jekyll update
 ---
 
@@ -182,3 +182,56 @@ Secondly, I will be using JSON data within MySQL, giving more a clear approach t
 
 
 And the ideal last step would be to use MongoDB (or any other JSON-based DB) to be called by the REST API client. [Tutorial resource](https://dev.to/aquibpy/go-and-mongodb-building-a-crud-api-from-scratch-10p6)
+
+#### Day 49 - 23/12/2024 && 27/12/2024
+
+I finished yet another round for my API client projects, this time I went over go.dev site and followed the instructions for [connecting to relational databases](https://go.dev/doc/tutorial/database-access#set_up_database), funny enough, it followed a similar
+structure than the one that showed how to design a basic JSON API, so things went easy enough. Adding some extra layer of complexity with minor code differences and the local VM also helped me out to figure what to do to
+troubleshoot small issues as root user not being able to connect (which is fine, I understand it as a security measure from MySQL and a way to refresh how to create users and set permissions).
+
+Code at the time of writing:
+
+```go
+package main
+
+import (
+	"database/sql"
+	"fmt"
+	"log"
+
+	"github.com/go-sql-driver/mysql"
+)
+
+type Album struct {
+	ID     int
+	Title  string
+	Artist string
+	Price  float32
+}
+
+func main() {
+	cfg := mysql.Config{
+		User:   "mysqlu", //This values were hardcoded to avoid the need of
+		Passwd: "pwd",    // exporting variables for each node prior to execute this script
+		/*
+					User:   os.Getenv("DBUSER"),
+			        Passwd: os.Getenv("DBPASS"),
+		*/
+		Net:    "tcp",
+		Addr:   "192.168.1.134:3306",
+		DBName: "MUSIC",
+	}
+
+	// Get a database Handle
+	db, err := sql.Open("mysql", cfg.FormatDSN())
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	pingErr := db.Ping()
+	if pingErr != nil {
+		log.Fatal(pingErr)
+	}
+	fmt.Println("Connected!")
+}
+```
