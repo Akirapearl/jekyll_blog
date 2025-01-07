@@ -235,3 +235,70 @@ func main() {
 	fmt.Println("Connected!")
 }
 ```
+
+#### Intercourse - Holiday season
+
+During this weeks, I wasn't able to code that much due to social gatherings, travels, work requirements etc, BUT I was able to modify a bit my current setup, so here it is a brief summary of what I've done.
+
+```
+- Distrohop to Opensuse Tumbleweed, changing my work PC from my desktop to my laptop (Thinkpad T480).
+- Replicate my previous setup.
+- Advance onto the next topic for the relational database tutorial.
+```
+
+Current code added to the above indicated one:
+```go
+func getAlbumsByArtist(db *sql.DB, name string) ([]Album, error) {
+
+// Found error on docs: db connection needs to be passed to this function in order to allow the query to be executed
+
+// otherwise, the db.Query returns undefined.
+
+  
+
+// Album slice to hold data from returned rows
+
+var albums []Album
+
+  
+
+rows, err := db.Query("SELECT * FROM Albums where artist = ?", name)
+
+if err != nil {
+
+return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+
+}
+
+defer rows.Close()
+
+  
+
+// Loop through rows, using scan to assign column data to struct fields
+
+for rows.Next() {
+
+var alb Album
+
+if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil {
+
+return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+
+}
+
+albums = append(albums, alb)
+
+}
+
+if err := rows.Err(); err != nil {
+
+return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+
+}
+
+return albums, nil
+
+}
+```
+
+It is worth mentioning that a minor modification had to be made, since the db variable was not passed as an argument, hence generating a undefined error for this part of the code.
