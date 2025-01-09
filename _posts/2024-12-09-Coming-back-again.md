@@ -236,69 +236,122 @@ func main() {
 }
 ```
 
-#### Intercourse - Holiday season
+#### Intercourse - Holiday season & Early January 2025
 
 During this weeks, I wasn't able to code that much due to social gatherings, travels, work requirements etc, BUT I was able to modify a bit my current setup, so here it is a brief summary of what I've done.
 
 ```
 - Distrohop to Opensuse Tumbleweed, changing my work PC from my desktop to my laptop (Thinkpad T480).
 - Replicate my previous setup.
-- Advance onto the next topic for the relational database tutorial.
+- Started working with Obsidian to write this blog.
+- Finished the how-to-use relational databases w/Golang tutorial.
 ```
 
 Current code added to the above indicated one:
 ```go
+
+func main(){
+[...]
+	albums, err := getAlbumsByArtist(db, "Linkin Park")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("Albums found: %v\n", albums)
+
+	alb, err := getAlbumByID(db, 3)
+
+	if err != nil {
+			log.Fatal(err)
+		}
+	fmt.Printf("Album found: %v\n", alb)
+}
+	albID, err := addAlbum(db, Album{
+		Title: "13 Voices",
+		Artist: "Sum 41",
+		Price: 10,
+	})
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("ID of added album: %v\n", albID)
+}
+
 func getAlbumsByArtist(db *sql.DB, name string) ([]Album, error) {
 
 // Found error on docs: db connection needs to be passed to this function in order to allow the query to be executed
-
 // otherwise, the db.Query returns undefined.
 
-  
-
 // Album slice to hold data from returned rows
+	var albums []Album
 
-var albums []Album
+	rows, err := db.Query("SELECT * FROM Albums where artist = ?", name)
+	if err != nil {
+		return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+	}
 
-  
-
-rows, err := db.Query("SELECT * FROM Albums where artist = ?", name)
-
-if err != nil {
-
-return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
-
-}
-
-defer rows.Close()
-
-  
+	defer rows.Close()
 
 // Loop through rows, using scan to assign column data to struct fields
+	for rows.Next() {
+		var alb Album
+		if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err !=nil{return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+	}
+	albums = append(albums, alb)
+}
 
-for rows.Next() {
+	if err := rows.Err(); err != nil {
+	return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+	}
 
-var alb Album
-
-if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil {
-
-return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+	return albums, nil
 
 }
 
-albums = append(albums, alb)
+func getAlbumByID(db *sql.DB, id int64) (Album, error) {
+
+	var alb Album
+
+	row := db.QueryRow("SELECT * FROM Albums WHERE id = ?", id)
+
+	if err := row.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil
+	{
+		if err == sql.ErrNoRows {
+			return alb, fmt.Errorf("albumsById %d: no such album", id)
+
+		}
+
+		return alb, fmt.Errorf("albumsById %d: %v", id, err)
+	}
+	return alb, nil
 
 }
 
-if err := rows.Err(); err != nil {
+func addAlbum(db *sql.DB, alb Album) (int64, error) {
 
-return nil, fmt.Errorf("getAlbumsByArtist %q: %v", name, err)
+//Missing max id search to automate insert
 
-}
+	result, err := db.Exec("INSERT INTO Albums VALUES (7, ?, ?, ?)", alb.Title,
+	alb.Artist, alb.Price)
 
-return albums, nil
+	if err != nil {
+		return 0, fmt.Errorf("addAlbum: %v", err)
+	}
+
+	id, err := result.LastInsertId()
+
+	if err != nil {
+		return 0, fmt.Errorf("addAlbum: %v", err)
+	}
+
+	return id, nil
 
 }
 ```
 
-It is worth mentioning that a minor modification had to be made, since the db variable was not passed as an argument, hence generating a undefined error for this part of the code.
+It is worth mentioning that a minor modification had to be made, since the db variable was not passed as an argument to the external functions, it generated an "undefined" error for this parts of the code.
+
+On the other hand, the provided INSERT statement did not really consider the ID as part of the values to be inserted directly, because of this minor tinkering will be needed to avoid NULL values within the Albums table for said field. It is also worth to mention that the ID field was not set as primary key for my table creation statement for more simplicity of the statements.
